@@ -3,13 +3,13 @@ import {hamburger} from "../assets/icons/index";
 import {navLinks} from "../constants";
 const Nav = () => {
   return (
-    <header className="px-2 py-8 absolute w-full">
+    <header className="padding-x py-8 absolute z-10 w-full sticky">
     <nav className="flex justify-between items-center max-container">
       <a href="/">
         <img
           src={headerLogo}
           alt="Nike Logo"
-          width={130}
+          width={129}
           height={29}
         />
       </a>
