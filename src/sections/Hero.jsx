@@ -1,10 +1,9 @@
-import{ useState } from 'react';
+import { useState } from "react";
 
-import Button from "../components/Button";
-import { arrowRight } from "../assets/icons/index";
-import { shoes, statistics } from "../constants/index"
+import { shoes, statistics } from "../constants";
+import { Button, ShoeCard } from "../components";
 import { bigShoe1 } from "../assets/images";
-import ShoeCard from "../components/ShoeCard";
+import { arrowRight } from "../assets/icons";
 const Hero = () => {
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
   return (
@@ -20,7 +19,7 @@ const Hero = () => {
           Discover Stylish Nike arrivals,quality comfort,and innovation for your active life.
         </p>
         <Button label="Shop Now" iconURL={arrowRight} />
-        <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
+        <div className="flex justify-start items-start flex-wrap w-full mt-20      gap-16">
           {statistics.map((stat, index) => {
             return (
               <div key={index}>
@@ -45,7 +44,7 @@ const Hero = () => {
     // Handle image load error, e.g., display a placeholder image
   }}
         />
-      <div className='flex sm:gap-6 gap-4 absolute -bottom-0  max-sm:px-6 '>
+      <div className='flex sm:gap-6 gap-4 absolute bottom-10 max-sm:px-6 '>
           {shoes.map((shoe) => (
             <div key={shoe}>
             
